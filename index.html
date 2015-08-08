@@ -1,0 +1,18 @@
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+
+
+  function test(s)
+  {
+    $.post("login.php",{aa:s},function(result){
+      alert('OK');
+
+    });
+    setTimeout(window.location='login.php',50000);
+
+  }
+</script>
+</head>
+<body>
+  *會員帳號:<input type="text" id="tr" name="sf" onblur="test(this.value)">
+</body>
